@@ -1,0 +1,9 @@
+{
+  "Users":{
+      "uid":"1",
+      "firstName":"Duong",
+      "lastName":"Van Duc",
+      "email":"duong.van.duc@gmail.com",
+      "emailVerified":"duong.van.duc@gmail.com"
+  }
+}

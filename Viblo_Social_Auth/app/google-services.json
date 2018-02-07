@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "69516841532",
+    "firebase_url": "https://viblosocialauth.firebaseio.com",
+    "project_id": "viblosocialauth",
+    "storage_bucket": "viblosocialauth.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:69516841532:android:865ef32092f0e2ce",
+        "android_client_info": {
+          "package_name": "com.framgia.viblo_social_auth"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "69516841532-f9bqj8e8r7vpk7m7k9jk0beel2vipa3f.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.framgia.viblo_social_auth",
+            "certificate_hash": "b6f6b7e8febf49791e598612b8889f81c8f5e44b"
+          }
+        },
+        {
+          "client_id": "69516841532-n68luqtvjmemidptho0g4ih8fpnitddl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCj_aw5RLzL9YHtqFQGAS5IOoPGD99aUTs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "69516841532-n68luqtvjmemidptho0g4ih8fpnitddl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
