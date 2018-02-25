@@ -1,17 +1,24 @@
 package com.framgia.viblo_social_auth
 
+import android.app.Activity
+import android.app.Fragment
 import android.content.Intent
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.text.TextUtils
 import android.util.Log
+import android.view.LayoutInflater
 import android.view.View
+import android.view.ViewGroup
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
 
-class ForgotPasswordActivity : AppCompatActivity() {
+/**
+ * Created by dvduc on 2/20/2018.
+ */
+
+public class ForgotPasswordFragment : Fragment {
 
     private val TAG = "ForgotPasswordActivity"
     //UI elements
@@ -19,16 +26,24 @@ class ForgotPasswordActivity : AppCompatActivity() {
     private var btnSubmit: Button? = null
     //Firebase references
     private var mAuth: FirebaseAuth? = null
+    private var aAuthenActivity: AuthenFirebaseActivity? = null
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_forgot_password)
+    public constructor() : super() {
+    }
+
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
+        return inflater.inflate(R.layout.activity_forgot_password, container, false)
         initialise()
     }
 
+    override fun onAttach(activity: Activity?) {
+        super.onAttach(aAuthenActivity)
+    }
+
     private fun initialise() {
-        etEmail = findViewById<View>(R.id.et_email) as EditText
-        btnSubmit = findViewById<View>(R.id.btn_submit) as Button
+        aAuthenActivity = AuthenFirebaseActivity()
+        etEmail = activity.findViewById<View>(R.id.et_email) as EditText
+        btnSubmit = activity.findViewById<View>(R.id.btn_submit) as Button
         mAuth = FirebaseAuth.getInstance()
         btnSubmit!!.setOnClickListener { sendPasswordResetEmail() }
     }
@@ -42,20 +57,22 @@ class ForgotPasswordActivity : AppCompatActivity() {
                         if (task.isSuccessful) {
                             val message = "Email sent."
                             Log.d(TAG, message)
-                            Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
+                            Toast.makeText(activity, message, Toast.LENGTH_SHORT).show()
                             updateUI()
                         } else {
                             Log.w(TAG, task.exception!!.message)
-                            Toast.makeText(this, "No user found with this email.", Toast.LENGTH_SHORT).show()
+                            Toast.makeText(activity, "No user found with this email.", Toast.LENGTH_SHORT).show()
                         }
                     }
         } else {
-            Toast.makeText(this, "Enter Email", Toast.LENGTH_SHORT).show()
+            Toast.makeText(activity, "Enter Email", Toast.LENGTH_SHORT).show()
         }
     }
     private fun updateUI() {
-        val intent = Intent(this@ForgotPasswordActivity, AuthenFirebaseActivity::class.java)
+        val intent = Intent(activity, AuthenFirebaseActivity::class.java)
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
         startActivity(intent)
     }
+}
+
 }

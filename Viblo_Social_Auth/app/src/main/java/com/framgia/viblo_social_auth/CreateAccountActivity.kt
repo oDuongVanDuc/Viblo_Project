@@ -95,7 +95,7 @@ private fun createNewAccount() {
 
     private fun updateUserInfoAndUI() {
         //start next activity
-        val intent = Intent(this@CreateAccountActivity, MainActivity::class.java)
+        val intent = Intent(this@CreateAccountActivity, LoginSuccessActivity::class.java)
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
         startActivity(intent)
     }

@@ -15,7 +15,7 @@
         completions."
     </string>
 
-　<!-- Login Firebase-->
+    　<!-- Login Firebase-->
     <string name="email">Email</string>
     <string name="password">Password</string>
     <string name="first_name">First Name</string>
@@ -25,5 +25,9 @@
     <string name="send_password_reset_email">send password reset email</string>
     <string name="etEmail">Please input Email</string>
     <string name="etPassword">Please input Password</string>
+
+    <string name="btn_database">Firebase Real Database</string>
+    <string name="btn_ga">Google Analytis</string>
+    <string name="btn_authen">Firebase Authentication</string>
 
 </resources>
