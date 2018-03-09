@@ -1,9 +1,11 @@
-package com.framgia.viblo_social_auth
+package com.framgia.viblo_social_auth.authen
 
 import android.app.Fragment
 import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import com.framgia.viblo_social_auth.MainActivity
+import com.framgia.viblo_social_auth.R
 
 class AuthenFirebaseActivity : AppCompatActivity() {
 

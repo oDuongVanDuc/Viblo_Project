@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_margin="10dp"
-    tools:context="com.framgia.viblo_social_auth.LoginSuccessActivity">
+    tools:context="com.framgia.viblo_social_auth.authen.LoginSuccessActivity">
     <ImageButton
         android:id="@+id/ib_profile_pic"
         android:layout_width="100dp"

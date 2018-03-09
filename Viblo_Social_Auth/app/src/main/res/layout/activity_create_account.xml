@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.framgia.viblo_social_auth.CreateAccountActivity">
+    tools:context="com.framgia.viblo_social_auth.authen.CreateAccountActivity">
     <EditText
         android:id="@+id/et_first_name"
         style="@style/viewCustom"

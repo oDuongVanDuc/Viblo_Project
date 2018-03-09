@@ -1,4 +1,4 @@
-package com.framgia.viblo_social_auth
+package com.framgia.viblo_social_auth.authen
 
 import android.app.Activity
 import android.app.Fragment
@@ -12,8 +12,8 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.EditText
-import android.widget.TextView
 import android.widget.Toast
+import com.framgia.viblo_social_auth.R
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase

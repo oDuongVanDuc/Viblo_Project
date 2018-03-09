@@ -15,7 +15,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".AuthenFirebaseActivity">
+        <activity android:name=".authen.AuthenFirebaseActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -26,9 +26,9 @@
         <!-- android:name=".LoginActivity" -->
         <!-- android:label="@string/title_activity_login" /> -->
         <activity android:name=".MainActivity" />
-        <activity android:name=".CreateAccountActivity" />
-        <activity android:name=".ForgotPasswordActivity" />
-        <activity android:name=".LoginSuccessActivity"></activity>
+        <activity android:name=".authen.CreateAccountActivity" />
+        <activity android:name=".authen.ForgotPasswordActivity" />
+        <activity android:name=".authen.LoginSuccessActivity"></activity>
     </application>
 
 </manifest>

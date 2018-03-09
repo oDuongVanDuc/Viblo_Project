@@ -1,4 +1,4 @@
-package com.framgia.viblo_social_auth
+package com.framgia.viblo_social_auth.authen
 
 import android.content.Context
 import android.support.v7.app.AppCompatActivity
@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.view.View
 import android.widget.TextView
 import android.widget.Toast
+import com.framgia.viblo_social_auth.R
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.*
 

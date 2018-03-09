@@ -1,4 +1,4 @@
-package com.framgia.viblo_social_auth
+package com.framgia.viblo_social_auth.authen
 
 import android.content.Intent
 import android.support.v7.app.AppCompatActivity
@@ -9,6 +9,7 @@ import android.view.View
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
+import com.framgia.viblo_social_auth.R
 import com.google.firebase.auth.FirebaseAuth
 
 class ForgotPasswordActivity : AppCompatActivity() {
